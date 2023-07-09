@@ -3,6 +3,9 @@ import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { useRef, useLayoutEffect } from "react";
 import { useTransform, useScroll, useTime } from "framer-motion";
 import { degreesToRadians, progress, mix } from "popmotion";
+import { Flex } from '@chakra-ui/react';
+
+
 
 
 const color = "#111111";
@@ -13,16 +16,6 @@ const Icosahedron = () => (
     <meshBasicMaterial wireframe color={color} />
   </mesh>
 );
-
-// const Square = () => {
-//   <mesh rotation-y={0.35}>
-//     <boxGeometry args={[1,0]} />
-//     <meshBasicMaterial wireframe color={color} />
-//   </mesh>
-// }
-
-
-
 
 const Star = ({ p }) => {
   const ref = useRef();
@@ -84,10 +77,10 @@ function Scene({ numStars = 50 }) {
 
 export default function Background() {
   return (
-    <div className="container">
+    <Flex h="100%" w="100%"  >
       <Canvas gl={{ antialias: false }}>
         <Scene />
       </Canvas>
-    </div>
+    </Flex>
   )
 }

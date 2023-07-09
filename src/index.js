@@ -1,14 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './Components/App/App';
 import reportWebVitals from './reportWebVitals';
+import { CSSReset, ChakraBaseProvider, extendTheme } from '@chakra-ui/react';
+
+const colors = {
+  brand: {
+    100: "#ffbb00",
+    200: "#111111"
+  }
+}
+
+const fonts = {
+  body: `'Roboto Mono', monospace`,
+  body100: "'Roboto Mono', monospace",
+}
+
+const theme = extendTheme({ colors, fonts })
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <ChakraBaseProvider theme={theme}>
+    <CSSReset />
     <App />
-  </React.StrictMode>
+  </ChakraBaseProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
