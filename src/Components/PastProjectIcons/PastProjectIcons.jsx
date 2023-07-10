@@ -23,7 +23,7 @@ export default function PastProjectIcons() {
                     <Divider borderColor={'brand.200'} />
                     </motion.div>
                     <motion.a
-                        href="https://github.com/EyanAnd/coffee-for-good-homebase"
+                        href="https://github.com/EyanAnd/movie-sagas"
                         target="_blank"
                         initial={{ opacity: 0, x: -200 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ export default function PastProjectIcons() {
                     <Divider borderColor={'brand.200'} />
                     </motion.div>
                     <motion.a
-                        href="https://github.com/EyanAnd/coffee-for-good-homebase"
+                        href="https://github.com/EyanAnd/redux-feedback-loop"
                         target="_blank"
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
