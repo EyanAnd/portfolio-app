@@ -6,13 +6,13 @@ import './Nav.css'
 export default function Nav() {
   return (
     <>
-      <Flex gap={'2rem'} justifyContent="space-between" >
-        <Flex align="center" gap={2} justifyContent='flex-start'>
-          <motion.div
-            initial={{ opacity: 0, x: -200 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-          >
+      <motion.div
+        initial={{ opacity: 0, x: -200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <Flex gap={'2rem'} justifyContent="space-between" >
+          <Flex align="center" gap={2} justifyContent='flex-start'>
             <ButtonGroup variant="tertiary" paddingTop="1rem">
               <IconButton
                 as={Link}
@@ -27,9 +27,9 @@ export default function Nav() {
                 icon={<FaGithub fontSize="1.25rem" />}
               />
             </ButtonGroup>
-          </motion.div>
+          </Flex>
         </Flex>
-      </Flex>
+      </motion.div>
       <Flex gap={'2rem'} align={'center'}>
         <Flex p={6} align="center" >
           <motion.div
@@ -37,8 +37,8 @@ export default function Nav() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           ><Flex gap={'2rem'} >
-              <Link fontFamily={'body100'} fontSize={'xl'}>About Me</Link>
-              <Link fontFamily={'body100'} fontSize={'xl'}>Projects</Link>
+              <Link href='#about' fontFamily={'body100'} fontSize={'xl'}>About Me</Link>
+              <Link href='#projects' fontFamily={'body100'} fontSize={'xl'}>Projects</Link>
             </Flex>
           </motion.div>
         </Flex>

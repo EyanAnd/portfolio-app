@@ -1,12 +1,9 @@
-import './Background.css'
+import { Box } from "@chakra-ui/react";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { useRef, useLayoutEffect } from "react";
 import { useTransform, useScroll, useTime } from "framer-motion";
 import { degreesToRadians, progress, mix } from "popmotion";
-import { Flex } from '@chakra-ui/react';
-
-
-
+import * as THREE from "three";
 
 const color = "#111111";
 
@@ -18,7 +15,7 @@ const Icosahedron = () => (
 );
 
 const Star = ({ p }) => {
-  const ref = useRef();
+  const ref = useRef(null);
 
   useLayoutEffect(() => {
     const distance = mix(2, 3.5, Math.random());
@@ -28,7 +25,9 @@ const Star = ({ p }) => {
       Math.random()
     );
     const xAngle = degreesToRadians(360) * p;
-    ref.current.position.setFromSphericalCoords(distance, yAngle, xAngle);
+    const position = new THREE.Vector3();
+    position.setFromSphericalCoords(distance, yAngle, xAngle);
+    ref.current.position.copy(position);
   });
 
   return (
@@ -39,7 +38,7 @@ const Star = ({ p }) => {
   );
 };
 
-function Scene({ numStars = 50 }) {
+function Scene({ numStars = 100 }) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
@@ -54,7 +53,7 @@ function Scene({ numStars = 50 }) {
     camera.position.setFromSphericalCoords(
       distance.get(),
       yAngle.get(),
-      time.get() * 0.0003
+      time.get() * 0.0005
     );
     camera.updateProjectionMatrix();
     camera.lookAt(0, 0, 0);
@@ -64,7 +63,7 @@ function Scene({ numStars = 50 }) {
 
   const stars = [];
   for (let i = 0; i < numStars; i++) {
-    stars.push(<Star p={progress(0, numStars, i)} />);
+    stars.push(<Star key={i} p={progress(0, numStars, i)} />);
   }
 
   return (
@@ -75,12 +74,13 @@ function Scene({ numStars = 50 }) {
   );
 }
 
-export default function Background() {
+export default function App() {
   return (
-    <Flex h="100%" w="100%"  >
+    <Box bg={'brand.100'} w="100%" h="100%" position="fixed" top={0} left={0} zIndex={-1}>
       <Canvas gl={{ antialias: false }}>
         <Scene />
       </Canvas>
-    </Flex>
-  )
+    </Box>
+    // Add your overlays and other components here
+  );
 }
