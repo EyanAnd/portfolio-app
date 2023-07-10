@@ -4,6 +4,13 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Nav.css'
 
 export default function Nav() {
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <motion.div
@@ -37,8 +44,8 @@ export default function Nav() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           ><Flex gap={'2rem'} >
-              <Link href='#about' fontFamily={'body100'} fontSize={'xl'}>About Me</Link>
-              <Link href='#projects' fontFamily={'body100'} fontSize={'xl'}>Projects</Link>
+              <Link onClick={() => scrollToSection('about')} fontFamily={'body100'} fontSize={'xl'}>About Me</Link>
+              <Link onClick={() => scrollToSection('projects')}  fontFamily={'body100'} fontSize={'xl'}>Projects</Link>
             </Flex>
           </motion.div>
         </Flex>

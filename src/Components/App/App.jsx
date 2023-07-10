@@ -7,6 +7,9 @@ import IntroContainer from '../IntroContainer/IntroContainer';
 import MainContainer from '../MainContainer/MainContainer';
 import LinkAnimationContainer from '../LinkAnimationsContainer/LinkAnimationsContainer';
 import AboutMe from '../AboutMe/AboutMe';
+import Projects from '../Projects/Projects';
+import PastProjectIcons from '../PastProjectIcons/PastProjectIcons';
+import Footer from '../Footer/Footer';
 
 
 function App() {
@@ -31,11 +34,14 @@ function App() {
             <MainContainer />
             <AboutMe />
           </Flex>
-          <Flex w="100%" justifyContent="left" p={'2rem'}>
-            <IntroContainer />
+          <Flex w="100%" justifyContent="space-between" p={'2rem'}>
+            <Projects />
+            <PastProjectIcons />
           </Flex>
+          <Divider borderColor={'brand.200'} variant={'dashed'} />
         </Flex>
       </Flex>
+      <Footer />
     </Flex>
   );
 }

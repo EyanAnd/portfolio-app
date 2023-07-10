@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 export default function AboutMe() {
     return (
         <motion.div
-            initial={{ opacity: 0, x: -200 }}
+            id="about"
+            initial={{ opacity: 0, x: 400 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}>
             <Flex p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.100'}>
