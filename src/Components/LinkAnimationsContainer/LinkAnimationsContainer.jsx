@@ -1,6 +1,6 @@
 import { Divider, Flex, Heading } from "@chakra-ui/react";
 import { motion, AnimatePresence } from "framer-motion";
-import { EditIcon } from "@chakra-ui/icons";
+
 
 export default function LinkAnimationContainer() {
     const soloProjectIcon =

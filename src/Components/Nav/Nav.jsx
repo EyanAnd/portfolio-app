@@ -18,13 +18,13 @@ export default function Nav() {
                 as={Link}
                 href="https://www.linkedin.com/in/eyanand/"
                 aria-label="LinkedIn"
-                icon={<FaLinkedin fontSize="1.25rem" />}
+                icon={<FaLinkedin fontSize="3.25rem" />}
               />
               <IconButton
                 as={Link}
                 href="https://github.com/EyanAnd?tab=repositories"
                 aria-label="Github"
-                icon={<FaGithub fontSize="1.25rem" />}
+                icon={<FaGithub fontSize="3.25rem" />}
               />
             </ButtonGroup>
           </Flex>

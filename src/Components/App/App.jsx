@@ -6,6 +6,7 @@ import Nav from '../Nav/Nav';
 import IntroContainer from '../IntroContainer/IntroContainer';
 import MainContainer from '../MainContainer/MainContainer';
 import LinkAnimationContainer from '../LinkAnimationsContainer/LinkAnimationsContainer';
+import AboutMe from '../AboutMe/AboutMe';
 
 
 function App() {
@@ -28,12 +29,11 @@ function App() {
           </Flex>
           <Flex w={'100%'} justifyContent={'space-between'} p={'2rem'}>
             <MainContainer />
-            <IntroContainer />
+            <AboutMe />
           </Flex>
           <Flex w="100%" justifyContent="left" p={'2rem'}>
             <IntroContainer />
           </Flex>
-          <Divider variant={'dashed'} borderColor={'brand.200'}/>
         </Flex>
       </Flex>
     </Flex>
