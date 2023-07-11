@@ -1,5 +1,6 @@
 import { Flex, Box, Text, Heading, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import image from '../../images/portrait.jpg'
 
 export default function IntroContainer() {
     return (
@@ -9,7 +10,7 @@ export default function IntroContainer() {
             transition={{ duration: 1 }}>
             <Flex p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.100'}>
                 <Box gap={'4rem'} w={'100%'} boxSize={'container.sm'}>
-                    <Image gap={'2rem'} p={'1rem'} src='/images/portrait.jpg' boxSize={'2xs'} objectFit={'cover'} alt="intro-image" />
+                    <Image gap={'2rem'} p={'1rem'} src={image} boxSize={'2xs'} objectFit={'cover'} alt="intro-image" />
                     <Heading gap={'1rem'} p={'1rem'} fontFamily={'body100'} as='h2' >Howdy!</Heading>
                     <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>Here you can expect to find out a little more about me, as well as some of my
                     favorite projects I have been a part of or worked on.</Text>
