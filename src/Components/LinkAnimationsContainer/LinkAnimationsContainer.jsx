@@ -9,13 +9,13 @@ export default function LinkAnimationContainer() {
         const resumeIcon = "M156.162 0C140.21 0 124.257 6.56866 112.058 18.4548L25.1017 103.535C-8.36722 137.003 -8.36722 191.117 25.1017 224.898C58.5705 258.367 112.684 258.367 146.465 224.898L185.565 185.799L163.982 164.216L127.698 199.562L124.883 203.628C103.3 225.211 68.2671 225.211 46.6844 203.628C25.4145 182.358 26.04 147.951 46.6844 126.368L133.641 40.3503C145.84 28.1514 166.171 28.1514 178.683 40.3503C190.882 52.5493 190.256 71.9424 178.683 84.4542L100.485 161.714C97.3569 164.842 92.0394 164.842 88.5987 161.714C85.4707 158.586 85.4707 153.269 88.5987 149.828L90.4754 148.89L118.94 119.487L97.3569 97.9043L67.016 128.245C52.0019 143.259 52.0019 167.97 67.016 182.984C82.03 197.998 106.741 198.311 121.755 182.984L199.953 106.662C224.351 82.2646 224.351 42.8527 199.953 18.7676C187.754 6.56866 172.114 0.312793 155.849 0.312793L156.162 0Z";
     return (
         <>
-            <Flex justifyContent={'flex-start'} align={'center'} gap={'4rem'} alignContent={'center'} p={"2rem"} flexDir={"column"} boxSize={"container.sm"}>
+            <Flex justifyContent={'flex-start'} align={'center'} gap={'4rem'} alignContent={'center'} p={"2rem"} flexDir={["column"]} >
                 <AnimatePresence>
                     <motion.div 
                      initial={{ opacity: 0, y: -10 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.25, delay: 0.1 }}>
-                    <Heading p={'1rem'} fontFamily={'body100'} noOfLines={1}>Capstone Project</Heading>
+                    <Heading p={'1rem'} fontFamily={'body100'} >Capstone Project</Heading>
                     <Divider borderColor={'brand.200'} />
                     </motion.div>
                     <motion.a
@@ -50,7 +50,7 @@ export default function LinkAnimationContainer() {
                      initial={{ opacity: 0, y: -10 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.25, delay: 0.1 }}>
-                    <Heading p={'1rem'} fontFamily={'body100'} noOfLines={1}>Check Out My Resume</Heading>
+                    <Heading p={'1rem'} fontFamily={'body100'} >Check Out My Resume</Heading>
                     <Divider borderColor={'brand.200'} />
                     </motion.div>
                     <motion.a

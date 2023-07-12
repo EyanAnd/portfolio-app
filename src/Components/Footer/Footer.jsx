@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Footer() {
     return (
-        <Flex align={'center'} alignContent={'center'} justifyContent={'space-between'}>
+        <Flex  direction={{ base: 'column', sm: 'row' }} align={'center'} alignContent={'center'} justifyContent={'space-between'}>
         <AnimatePresence>
             <motion.div>
                 <Flex direction={'column'} gap={'2rem'} p={'2rem'} >
@@ -14,7 +14,7 @@ export default function Footer() {
                 </Flex>
             </motion.div>
         </AnimatePresence>
-        <Flex p={'2rem'} >
+        <Flex  p={'2rem'} >
             <Text>&copy; {new Date().getFullYear()} Eyan Anderson</Text>
         </Flex>
         </Flex>

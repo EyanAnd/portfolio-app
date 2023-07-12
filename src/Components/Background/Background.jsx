@@ -81,6 +81,5 @@ export default function App() {
         <Scene />
       </Canvas>
     </Box>
-    // Add your overlays and other components here
   );
 }

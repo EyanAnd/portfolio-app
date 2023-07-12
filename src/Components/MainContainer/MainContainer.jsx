@@ -1,4 +1,4 @@
-import { Box, Flex, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Flex, Wrap, WrapItem, useMediaQuery } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { SiReact, SiChakraui, SiFramer, SiVisualstudiocode, SiGithub, SiJavascript } from 'react-icons/si';
 
@@ -12,6 +12,8 @@ export default function MainContainer() {
         { icon: SiJavascript, text: 'JavaScript' },
     ];
 
+    const [isLargerThanMd] = useMediaQuery("(min-width: 48em)");
+    const iconSize = isLargerThanMd ? 120 : 80;
     return (
         <AnimatePresence>
             <motion.div
@@ -19,7 +21,7 @@ export default function MainContainer() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
             >
-                <Box p={'2rem'} gap={'2rem'} flexDir={'column'} boxSize={'xl'}>
+                <Box p={'2rem'} gap={'2rem'} flexDir={'column'}>
                     <Wrap spacing={5} alignContent={'center'} align={'center'}>
                         {listItems.map((item, index) => (
                             <WrapItem key={index}>
@@ -37,7 +39,7 @@ export default function MainContainer() {
                                     }}
                                 >
                                     <Flex gap={'2rem'} p={'2rem'} justifyContent={'space-evenly'} >
-                                        <item.icon size={120} />
+                                        <item.icon size={iconSize} />
                                     </Flex>
                                 </motion.div>
                             </WrapItem>

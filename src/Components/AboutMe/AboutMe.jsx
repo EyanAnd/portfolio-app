@@ -9,7 +9,7 @@ export default function AboutMe() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}>
             <Flex p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.100'}>
-                <Box gap={'4rem'} w={'100%'} boxSize={'container.sm'}>
+                <Box gap={'4rem'} w={'100%'} >
                     <Heading gap={'1rem'} p={'1rem'} fontFamily={'body100'} as='h2' >About Me</Heading>
                     <Divider size={'sm'} borderColor={'brand.100'} />
                     <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>I am a North Dakota Native and Future Full Stack Bootcamp
