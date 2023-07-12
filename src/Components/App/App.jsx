@@ -51,37 +51,7 @@ function App() {
       </Flex>
     </>
   )
-  return (
-    <Flex gap={'3rem'} direction="column" minH="100vh" color="brand.200">
-      <Flex direction="row" align="center" justifyContent="space-between">
-        <Nav />
-      </Flex>
-      <Flex flex="1" alignItems="center" justifyContent="center">
-        <Flex justifyContent={'center'} alignContent={'center'}>
-          <Background />
-        </Flex>
-        <Stack direction="column" >
-          <Flex w="100%" justifyContent="center">
-            <NameAnimation />
-          </Flex>
-          <Flex direction={{ base: 'column', sm: 'row' }} w="100%" justifyContent="space-between" p={'2rem'}>
-            <IntroContainer />
-            <LinkAnimationContainer />
-          </Flex>
-          <Flex direction={{ base: 'column', sm: 'row' }} w={'100%'} justifyContent={'space-between'} p={'2rem'}>
-            <MainContainer />
-            <AboutMe />
-          </Flex>
-          <Flex direction={{ base: 'column', sm: 'row' }} w="100%" justifyContent="space-between" p={'2rem'}>
-            <Projects />
-            <PastProjectIcons />
-          </Flex>
-          <Divider borderColor={'brand.200'} variant={'dashed'} />
-        </Stack>
-      </Flex>
-      <Footer />
-    </Flex>
-  );
+
 }
 
 export default App;
