@@ -1,7 +1,7 @@
 import './App.css';
 import Background from '../Background/Background';
 import NameAnimation from '../NameAnimation/NameAnimation';
-import { Divider, Flex, Link, Stack } from '@chakra-ui/react';
+import { Flex} from '@chakra-ui/react';
 import Nav from '../Nav/Nav';
 import IntroContainer from '../IntroContainer/IntroContainer';
 import MainContainer from '../MainContainer/MainContainer';

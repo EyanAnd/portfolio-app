@@ -13,7 +13,7 @@ export default function PastProjectIcons() {
     const feedback = "M10 250.132V37.7778C10 22.4365 22.4365 10 37.7778 10H232.222C247.564 10 260 22.4365 260 37.7778V176.667C260 192.008 247.564 204.444 232.222 204.444H78.9062C70.4678 204.444 62.4869 208.281 57.2154 214.869L24.8406 255.338C19.9196 261.489 10 258.01 10 250.132Z";
     return (
         <>
-            <Flex id="projects" justifyContent={'flex-start'} align={'center'} gap={'4rem'} alignContent={'center'} p={"2rem"} flexDir={"column"}>
+            <Flex  justifyContent={'flex-start'} align={'center'} gap={'4rem'} alignContent={'center'} p={"4rem"} flexDir={"column"}>
                 <AnimatePresence>
                     <motion.div 
                      initial={{ opacity: 0, x: 400 }}
@@ -74,7 +74,7 @@ export default function PastProjectIcons() {
                         >
                             <motion.path
                                 fill="none"
-                                strokeWidth="5"
+                                strokeWidth="6"
                                 stroke="#111111"
                                 d={feedback}
                                 initial={{ pathLength: 0 }}

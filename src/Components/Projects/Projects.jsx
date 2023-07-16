@@ -7,7 +7,7 @@ export default function Projects() {
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}>
-            <Flex p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.100'}>
+            <Flex id="projects" p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.100'}>
                 <Box gap={'4rem'} w={'100%'} >
                     <Heading gap={'1rem'} p={'1rem'} fontFamily={'body100'} as='h2' >Past Projects</Heading>
                     <Divider size={'sm'} borderColor={'brand.100'} />

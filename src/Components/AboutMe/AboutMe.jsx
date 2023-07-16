@@ -12,8 +12,7 @@ export default function AboutMe() {
                 <Box gap={'4rem'} w={'100%'} >
                     <Heading gap={'1rem'} p={'1rem'} fontFamily={'body100'} as='h2' >About Me</Heading>
                     <Divider size={'sm'} borderColor={'brand.100'} />
-                    <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>I am a North Dakota Native and Future Full Stack Bootcamp
-                    Graduate from Emerging Digital Academy. I decided to start learning how to code because I thought it would not only be a valuable skillset, but a way 
+                    <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>I am a North Dakota native and Full Stack developer. I decided to start learning how to code because I thought it would not only be a valuable skillset, but a way 
                     for me to express my creativity. Some technologies I am looking forward to learning after graduating include Python, Java as well as Svelte.</Text>
                     <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>I love discussing user first design and development as well as 
                     test driven development. As of now my favorite aspect of the stack has to be the front end. Creating Ways for the user to interact with the application
