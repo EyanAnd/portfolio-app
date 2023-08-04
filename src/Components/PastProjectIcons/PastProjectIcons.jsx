@@ -45,7 +45,7 @@ export default function PastProjectIcons() {
                                 d={joinedPath}
                                 initial={{ pathLength: 0 }}
                                 animate={{ pathLength: 1 }}
-                                transition={{ duration: 2 }}
+                                transition={{ duration: 3 }}
                             />
                         </motion.svg>
                     </motion.a>
@@ -79,7 +79,7 @@ export default function PastProjectIcons() {
                                 d={feedback}
                                 initial={{ pathLength: 0 }}
                                 animate={{ pathLength: 1 }}
-                                transition={{ duration: 1 }}
+                                transition={{ duration: 3 }}
                             />
                         </motion.svg>
                     </motion.a>
