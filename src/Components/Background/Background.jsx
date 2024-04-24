@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box  } from "@chakra-ui/react";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { useRef, useLayoutEffect } from "react";
 import { useTransform, useScroll, useTime } from "framer-motion";
@@ -6,13 +6,13 @@ import { degreesToRadians, progress, mix } from "popmotion";
 import * as THREE from "three";
 
 const color = "#F8EDEB";
-// get me the hex code for blanchard almond
-// #F8EDEB
-const Icosahedron = () => (
-  <mesh rotation-x={0.35}>
-    <icosahedronGeometry args={[1, 0]} />
-    <meshBasicMaterial wireframe color={color} />
-  </mesh>
+const Planet = () => (
+  <group>
+    <mesh>
+      <sphereGeometry args={[1, 24, 24]} />
+      <meshBasicMaterial wireframe reflectivity={1} color="#fae5bf" />
+    </mesh>
+  </group>
 );
 
 const Star = ({ p }) => {
@@ -34,7 +34,7 @@ const Star = ({ p }) => {
   return (
     <mesh ref={ref}>
       <boxGeometry args={[0.05, 0.05, 0.05]} />
-      <meshBasicMaterial wireframe color={color} />
+      <meshBasicMaterial wireframe='false' color={color} />
     </mesh>
   );
 };
@@ -60,7 +60,7 @@ function Scene({ numStars = 100 }) {
     camera.lookAt(0, 0, 0);
   });
 
-  useLayoutEffect(() => gl.setPixelRatio(0.3));
+  useLayoutEffect(() => gl.setPixelRatio(window.devicePixelRatio));
 
   const stars = [];
   for (let i = 0; i < numStars; i++) {
@@ -69,11 +69,13 @@ function Scene({ numStars = 100 }) {
 
   return (
     <>
-      <Icosahedron />
+      <Planet />
       {stars}
     </>
   );
 }
+
+
 
 export default function App() {
   return (
@@ -84,3 +86,4 @@ export default function App() {
     </Box>
   );
 }
+

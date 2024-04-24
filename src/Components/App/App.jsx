@@ -13,6 +13,8 @@ import Footer from '../Footer/Footer';
 
 
 function App() {
+
+
   return (
     <>
       <Background />
