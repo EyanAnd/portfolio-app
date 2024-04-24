@@ -12,10 +12,12 @@ export default function IntroContainer() {
                 <Box gap={'4rem'} w={'100%'} >
                     <Image gap={'2rem'} p={'1rem'} src={image} boxSize={'2xs'} objectFit={'cover'} alt="intro-image" />
                     <Heading gap={'1rem'} p={'1rem'} fontFamily={'body100'} as='h2' >Welcome!</Heading>
-                    <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>Here you can expect to find out a little more about me, as well as some of my
-                        favorite projects I have worked on.</Text>
-                    <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>Thank you so much for checking out my personal portfolio website.
-                        This was a blast to make and I hope you enjoy!</Text>
+                    <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>
+                        Hey! Thanks for stopping by! My name is Eyan and I am a software engineer based in Fargo, ND.
+                    </Text>
+                    <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>
+                        Here you will find out a lot more about who I am and some projects I have worked on. Thanks for stopping by!
+                    </Text>
                     <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}> Sincerely, Eyan.</Text>
                 </Box>
             </Flex>
