@@ -7,7 +7,8 @@ import { CSSReset, ChakraBaseProvider, extendTheme } from '@chakra-ui/react';
 const colors = {
   brand: {
     100: "#ffbb00",
-    200: "#111111"
+    200: "#111111",
+    300: "#F8EDEB"
   }
 }
 

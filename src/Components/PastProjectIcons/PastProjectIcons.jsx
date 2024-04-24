@@ -20,7 +20,7 @@ export default function PastProjectIcons() {
                      animate={{ opacity: 1, x: 0 }}
                      transition={{ duration: 0.25, delay: 0.1 }}>
                     <Heading p={'1rem'} fontFamily={'body100'}> Movie Sagas</Heading>
-                    <Divider borderColor={'brand.200'} />
+                    <Divider borderColor={'brand.300'} />
                     </motion.div>
                     <motion.a
                         href="https://github.com/EyanAnd/movie-sagas"
@@ -54,7 +54,7 @@ export default function PastProjectIcons() {
                      animate={{ opacity: 1, x: 0 }}
                      transition={{ duration: 0.25, delay: 0.1 }}>
                     <Heading p={'1rem'} fontFamily={'body100'} >Feedback Loop</Heading>
-                    <Divider borderColor={'brand.200'} />
+                    <Divider borderColor={'brand.300'} />
                     </motion.div>
                     <motion.a
                         href="https://github.com/EyanAnd/redux-feedback-loop"

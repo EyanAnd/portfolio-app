@@ -5,8 +5,9 @@ import { useTransform, useScroll, useTime } from "framer-motion";
 import { degreesToRadians, progress, mix } from "popmotion";
 import * as THREE from "three";
 
-const color = "#111111";
-
+const color = "#F8EDEB";
+// get me the hex code for blanchard almond
+// #F8EDEB
 const Icosahedron = () => (
   <mesh rotation-x={0.35}>
     <icosahedronGeometry args={[1, 0]} />
@@ -76,7 +77,7 @@ function Scene({ numStars = 100 }) {
 
 export default function App() {
   return (
-    <Box bg={'brand.100'} w="100%" h="100%" position="fixed" top={0} left={0} zIndex={-1}>
+    <Box bg={'#3898ec'} w="100%" h="100%" position="fixed" top={0} left={0} zIndex={-1}>
       <Canvas gl={{ antialias: false }}>
         <Scene />
       </Canvas>

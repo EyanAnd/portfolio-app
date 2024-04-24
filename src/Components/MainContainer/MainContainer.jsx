@@ -38,7 +38,7 @@ export default function MainContainer() {
                                         bottom: 50,
                                     }}
                                 >
-                                    <Flex gap={'2rem'} p={'2rem'} justifyContent={'space-evenly'} >
+                                    <Flex color={'brand.200'} gap={'2rem'} p={'2rem'} justifyContent={'space-evenly'} >
                                         <item.icon size={iconSize} />
                                     </Flex>
                                 </motion.div>

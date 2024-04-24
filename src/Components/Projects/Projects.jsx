@@ -7,10 +7,10 @@ export default function Projects() {
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}>
-            <Flex id="projects" p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.100'}>
+            <Flex id="projects" p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.300'}>
                 <Box gap={'4rem'} w={'100%'} >
                     <Heading gap={'1rem'} p={'1rem'} fontFamily={'body100'} as='h2' >Past Projects</Heading>
-                    <Divider size={'sm'} borderColor={'brand.100'} />
+                    <Divider size={'sm'} borderColor={'brand.300'} />
                     <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>Here are some current projects that I have enjoyed making during my time at Emerging Digital Academy.</Text>
                     <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}><strong>The Movie Saga Project</strong> allows the user to see their movie collection
                     of movies they have seen or maybe want to see. As well as tag them with genres.</Text>

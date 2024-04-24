@@ -8,10 +8,10 @@ export default function AboutMe() {
             initial={{ opacity: 0, x: 400 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}>
-            <Flex p={'2rem'} gap={'3rem'} fontFamily={'body100'} bg={'brand.200'} color={'brand.100'}>
+            <Flex p={'2rem'} gap={'3rem'} fontFamily={'body200'} bg={'brand.200'} color={'brand.300'}>
                 <Box gap={'4rem'} w={'100%'} >
                     <Heading gap={'1rem'} p={'1rem'} fontFamily={'body100'} as='h2' >About Me</Heading>
-                    <Divider size={'sm'} borderColor={'brand.100'} />
+                    <Divider size={'sm'} borderColor={'brand.300'} />
                     <Text gap={'1rem'} p={'1rem'} fontFamily={'body100'} fontSize={'lg'}>
                         I was born and raised in Fargo, ND. I have an adorable dog named Baker, I enjoy playing tennis, soccer and like the rest of the world have become quite addicted to pickle ball.
                     </Text>
