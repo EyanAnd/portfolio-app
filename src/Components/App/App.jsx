@@ -7,8 +7,6 @@ import IntroContainer from '../IntroContainer/IntroContainer';
 import MainContainer from '../MainContainer/MainContainer';
 import LinkAnimationContainer from '../LinkAnimationsContainer/LinkAnimationsContainer';
 import AboutMe from '../AboutMe/AboutMe';
-import Projects from '../Projects/Projects';
-import PastProjectIcons from '../PastProjectIcons/PastProjectIcons';
 import Footer from '../Footer/Footer';
 
 
@@ -41,14 +39,14 @@ function App() {
             <MainContainer />
           </Flex>
         </Flex>
-        <Flex direction={{ base: 'column', sm: 'row' }}>
+        {/* <Flex direction={{ base: 'column', sm: 'row' }}>
           <Flex flex={1}>
             <Projects />
           </Flex>
           <Flex flex={1}>
             <PastProjectIcons />
           </Flex>
-        </Flex>
+        </Flex> */}
         <Footer />
       </Flex>
     </>

@@ -26,6 +26,7 @@ export default function MainContainer() {
                         {listItems.map((item, index) => (
                             <WrapItem key={index}>
                                 <motion.div
+                                    
                                     whileHover={{ scale: 1.2 }}
                                     initial={{ opacity: 0, y: -10 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -39,7 +40,7 @@ export default function MainContainer() {
                                     }}
                                 >
                                     <Flex color={'brand.200'} gap={'2rem'} p={'2rem'} justifyContent={'space-evenly'} >
-                                        <item.icon size={iconSize} />
+                                        <item.icon cursor={'pointer'} size={iconSize} />
                                     </Flex>
                                 </motion.div>
                             </WrapItem>
