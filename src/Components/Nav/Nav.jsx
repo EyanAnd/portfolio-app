@@ -42,7 +42,7 @@ export default function Nav() {
           transition={{ duration: 1 }}
         ><Flex gap={'2rem'} >
             <Link onClick={() => scrollToSection('about')} fontFamily={'body100'} fontSize={'xl'}>About Me</Link>
-            <Link onClick={() => scrollToSection('projects')} fontFamily={'body100'} fontSize={'xl'}>Projects</Link>
+            {/* <Link onClick={() => scrollToSection('projects')} fontFamily={'body100'} fontSize={'xl'}>Projects</Link> */}
           </Flex>
         </motion.div>
       </Flex>
